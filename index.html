@@ -34,13 +34,103 @@
     }
   </script>
 <body class="font-manrope">
-    <header></header>
-    <main>
+    <header class="container mx-5 lg:mx-auto">
+      <!-- navbar -->
+      <div class="navbar bg-base-100 mt-12">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li class="text-red-600"><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="  text-4xl font-extrabold">Hockey<span class="text-red-600">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal  px-1 text-base ">
+            <li class="hover:text-red-500"><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-5">
+          <i class="fa-solid fa-magnifying-glass  hidden text-2xl lg:block"></i>
+          <a class="btn bg-[#FF4240] text-xl font-bold text-white">Get Ticket</a>
+        </div>
+      </div>
+      <!-- banner -->
+      <section class="mt-12 mx-5 lg:mx-auto">
+        <div class="carousel w-full">
+          <!-- slide one -->
+          <div id="slide1" class="carousel-item relative w-full h-[650px] bg-[linear-gradient(45deg,rgba(0,0,0,0),rgba(0,0,0,0)),url(./images/1.png)] bg-cover bg-no-repeat bg-center rounded-2xl">
+            <div class="hidden lg:block w-1/3 h-36 p-6 space-y-4 absolute right-8 bottom-8 rounded-2xl bg-black">
+              <h1 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h1>
+              <p class="font-medium text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div> 
+          <!-- slide two -->
+          <div id="slide2" class="carousel-item relative w-full h-[650px] bg-[linear-gradient(45deg,rgba(0,0,0,0),rgba(0,0,0,0)),url(./images/1.png)] bg-cover bg-no-repeat bg-center rounded-2xl">
+            <div class="hidden lg:block w-1/3 h-36 p-6 space-y-4 absolute right-8 bottom-8 rounded-2xl bg-black">
+              <h1 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h1>
+              <p class="font-medium text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+              <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div> 
+          <!-- slide three -->
+          <div id="slide3" class="carousel-item relative w-full h-[650px] bg-[linear-gradient(45deg,rgba(0,0,0,0),rgba(0,0,0,0)),url(./images/1.png)] bg-cover bg-no-repeat bg-center rounded-2xl">
+            <div class="hidden lg:block w-1/3 h-36 p-6 space-y-4 absolute right-8 bottom-8 rounded-2xl bg-black">
+              <h1 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h1>
+              <p class="font-medium text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
+              <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div> 
+          <!-- slide four -->
+          <div id="slide4" class="carousel-item relative w-full h-[650px] bg-[linear-gradient(45deg,rgba(0,0,0,0),rgba(0,0,0,0)),url(./images/1.png)] bg-cover bg-no-repeat bg-center rounded-2xl">
+            <div class="hidden lg:block w-1/3 h-36 p-6 space-y-4 absolute right-8 bottom-8 rounded-2xl bg-black">
+              <h1 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h1>
+              <p class="font-medium text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <div class="absolute flex justify-between  transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a> 
+              <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class=" mt-4 p-6 space-y-4  rounded-2xl bg-black lg:hidden">
+            <h1 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h1>
+            <p class="font-medium text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="container mx-5 lg:mx-auto">
       <!-- proffesional section -->
-      <section class="mx-5 lg:mx-32">
-        <div class=" py-8 space-y-6 text-center">
+      <section class="container mt-24  space-y-12 ">
+        <div class=" py-8 space-y-6 text-center border-t-2 border-b-2 border-dashed">
           <h1 class="text-4xl font-extrabold">Professional Hockeys Club</h1>
-          <p class="font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          <p class="font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+            <br>
+             dolor. Purus urna in sit nullam proin. </p>
         </div>
         <div class="flex flex-col lg:flex-row items-center text-center justify-center gap-8 mt-8">
           <!-- first radial progress card -->
@@ -95,9 +185,9 @@
         </div>
       </section>
       <!-- program section -->
-      <section class="mx-5 lg:mx-32">
+      <section class="container mt-24  space-y-12">
         <!-- program description -->
-        <div class=" py-8 space-y-6 text-center">
+        <div class=" py-8 space-y-6 text-center border-t-2 border-b-2 border-dashed">
           <h1 class="text-4xl font-extrabold">Program Sections</h1>
           <p class="font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
         </div>
@@ -136,16 +226,16 @@
         </div>
       </section>
       <!-- new product section -->
-        <section class="mx-5 lg:mx-32">
+        <section class="container mt-24  space-y-12">
           <!-- card description -->
-          <div class=" py-8 space-y-6 text-center">
+          <div class=" py-8 space-y-6 text-center border-t-2 border-b-2 border-dashed">
             <h1 class="text-4xl font-extrabold ">Our New Products</h1>
             <p class="font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
           </div>
           <!-- card content -->
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <!-- first card -->
-            <div class="card flex lg:flex-row bg-base-100 ">
+            <div class="card flex lg:flex-row bg-base-100 border-2 ">
               
               <div class="gap-5 p-6">
                 <figure><img class="w-full" src="Images/5.png" alt="jersey" /></figure>
@@ -181,7 +271,7 @@
               </div>
             </div>
             <!-- second card -->
-            <div class="card flex lg:flex-row bg-base-100 ">
+            <div class="card flex lg:flex-row bg-base-100 border-2">
              
               <div class="gap-5 p-6">
                 <figure><img class="w-full" src="Images/6.png" alt="football" /></figure>
@@ -217,7 +307,7 @@
               </div>
             </div>
             <!-- third card -->
-            <div class="card flex lg:flex-row bg-base-100 ">
+            <div class="card flex lg:flex-row bg-base-100 border-2 ">
              
               <div class="gap-5 p-6">
                 <figure><img class="w-full" src="Images/7.png" alt="cap" /></figure>
@@ -253,7 +343,7 @@
               </div>
             </div>
             <!-- fourth card -->
-            <div class="card flex lg:flex-row bg-base-100 ">
+            <div class="card flex lg:flex-row bg-base-100 border-2 ">
              
               <div class="gap-5 p-6">
                 <figure><img class="w-full" src="Images/8.png" alt="jersey" /></figure>
@@ -289,7 +379,7 @@
               </div>
             </div>
             <!-- fifth card -->
-            <div class="card flex lg:flex-row bg-base-100 ">
+            <div class="card flex lg:flex-row bg-base-100 border-2">
              
               <div class="gap-5 p-6">
                 <figure><img class="w-full" src="Images/9.png" alt="helmet" /></figure>
@@ -325,7 +415,7 @@
               </div>
             </div>
             <!-- sixth card -->
-            <div class="card flex lg:flex-row bg-base-100 ">
+            <div class="card flex lg:flex-row bg-base-100 border-2">
              
               <div class="gap-5 p-6">
                 <figure><img class="w-full" src="Images/10.png" alt="football" /></figure>
@@ -362,15 +452,96 @@
             </div>
           </div>
         </section>
+        <!-- client questions section -->
+        <section class="container mt-24  space-y-12">
+          <!-- client description -->
+          <div class="py-8 space-y-6 text-center border-t-2 border-b-2 border-dashed">
+            <h1 class="text-4xl font-extrabold">Clients Question</h1>
+            <p class="font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div>
+          <!-- carousel -->
+          <div class="grid lg:grid-cols-5 gap-10 p-8 border-2  rounded-2xl">
+            <div class="col-span-2  rounded-2xl  ">
+              <img class="h-full" src="Images/11.png" alt="question pic">
+            </div>
+            <div class="col-span-3 space-y-12">
+              <!-- first question -->
+              <div class="collapse collapse-plus border-b-2 ">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-xl font-bold ">
+                  Our Equipment
+                </div>
+                <div class="collapse-content"> 
+                  <p class="text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                </div>
+              </div>
+              <hr>
+              <!-- second question -->
+              <div class="collapse collapse-plus border-b-2 ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-bold">
+                  Hockey Training
+                </div>
+                <div class="collapse-content"> 
+                  <p class="text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                </div>
+              </div>
+              <hr>
+              <!-- third question -->
+              <div class="collapse collapse-plus border-b-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-bold">
+                  Private Lessons
+                </div>
+                <div class="collapse-content"> 
+                  <p class="text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                </div>
+              </div>
+              <hr>
+              <!-- fourth question -->
+              <div class="collapse collapse-plus border-b-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-bold">
+                  Ski Touring
+                </div>
+                <div class="collapse-content"> 
+                  <p class="text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                </div>
+              </div>
+              <hr>
+              <!-- fifth question -->
+              <div class="collapse collapse-plus border-b-2 ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-bold">
+                  Booking
+                </div>
+                <div class="collapse-content"> 
+                  <p class="text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                </div>
+              </div>
+              <hr>
+              <!-- sixth question -->
+              <div class="collapse collapse-plus border-b-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-bold">
+                  Pricings
+                </div>
+                <div class="collapse-content"> 
+                  <p class="text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- get in touch section -->
-        <section class="mx-5 lg:mx-32">
-          <div class="py-8 space-y-6 text-center">
+        <section class="container mt-24  space-y-12">
+          <div class="py-8 space-y-6 text-center border-t-2 border-b-2 border-dashed">
             <h1 class="text-4xl font-extrabold">Get In Touch</h1>
             <p class="font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
           </div>
           <!-- contact info -->
-          <div class="  flex flex-col lg:flex-row  gap-6">
-            <div class=" p-12 space-y-6 border-2 rounded-2xl">
+          <div class="  grid lg:grid-cols-5 gap-6">
+            <div class="col-span-2 p-12 space-y-6 border-2 rounded-2xl">
               <!-- first card info -->
               <div class=" p-8  bg-[#BCED6D1A]">
                 <div class="">
@@ -399,41 +570,43 @@
               </div>
             </div>
             <!-- contact form -->
-           
+           <div class="col-span-3">
             <div class=" flex flex-col gap-6">
-               <!-- first row -->
-              <div class=" flex flex-col lg:flex-row justify-between gap-4">
-                <div class="space-y-4">
-                  <p class="text-xl font-bold text-" #131318="">Your Name</p>
-                  <input class="bg-[#13131808] py-5 pl-5 rounded-xl w-[365px]" type="text" placeholder="Enter your full name">
-                </div>
-                <div class="space-y-4">
-                  <p class="text-xl font-bold text-" #131318="">Your Email</p>
-                  <input class="bg-[#13131808] py-5 pl-5 rounded-xl w-[365px]" type="text" placeholder="Enter your email">
-                </div>
-              </div>
-              <!-- second row -->
-              <div class="flex flex-col lg:flex-row  justify-between gap-4">
-                <div class="space-y-4">
-                  <p class="text-xl font-bold text-" #131318="">Subject</p>
-                  <input class="bg-[#13131808] py-5 pl-5 rounded-xl w-[365px]" type="text" placeholder="Enter your subject">
-                </div>
-                <div class="space-y-4">
-                  <p class="text-xl font-bold text-" #131318="">Phone Number</p>
-                  <input class="bg-[#13131808] py-5 pl-5 rounded-xl w-[365px]" type="text" placeholder="Enter your phone number">
-                </div>
-              </div>
-              <!-- third row -->
-              <div>
-                <div class=" space-y-4">
-                  <p class="text-xl font-bold text-" #131318="">Message</p>
-                  <input class="bg-[#13131808] py-5 pl-5 rounded-xl h-[370px] w-[365px] lg:w-[672px]" type="text" placeholder="Write your message">
-                </div>
-                <div class="mt-8">
-                  <button class="bg-[#FF4240] items-center w-[365px] lg:w-[672px] rounded-xl py-4 text-white">Send Message</button>
-                </div>
-              </div>
-            </div>
+              <!-- first row -->
+             <div class=" flex flex-col lg:flex-row justify-between gap-4">
+               <div class="space-y-4">
+                 <p class="text-xl font-bold text-" #131318="">Your Name</p>
+                 <input class="bg-[#13131808] py-5 pl-5 rounded-xl w-[365px]" type="text" placeholder="Enter your full name">
+               </div>
+               <div class="space-y-4">
+                 <p class="text-xl font-bold text-" #131318="">Your Email</p>
+                 <input class="bg-[#13131808] py-5 pl-5 rounded-xl w-[365px]" type="text" placeholder="Enter your email">
+               </div>
+             </div>
+             <!-- second row -->
+             <div class="flex flex-col lg:flex-row  justify-between gap-4">
+               <div class="space-y-4">
+                 <p class="text-xl font-bold text-" #131318="">Subject</p>
+                 <input class="bg-[#13131808] py-5 pl-5 rounded-xl w-[365px]" type="text" placeholder="Enter your subject">
+               </div>
+               <div class="space-y-4">
+                 <p class="text-xl font-bold text-" #131318="">Phone Number</p>
+                 <input class="bg-[#13131808] py-5 pl-5 rounded-xl w-[365px]" type="text" placeholder="Enter your phone number">
+               </div>
+             </div>
+             <!-- third row -->
+             <div>
+               <div class=" space-y-4">
+                 <p class="text-xl font-bold text-" #131318="">Message</p>
+                 <input class="bg-[#13131808] py-5 pl-5 rounded-xl h-[370px] w-[365px] lg:w-[900px]" type="text" placeholder="Write your message">
+               </div>
+               <div class="mt-8">
+                 <button class="bg-[#FF4240] items-center w-[365px] lg:w-[900px] rounded-xl py-4 text-white">Send Message</button>
+               </div>
+             </div>
+           </div>
+           </div>
+            
           </div>
           <div class="flex flex-col justify-center items-center text-center gap-6 mt-12 py-4 bg-[#13131808] ">
             <h3 class="font-extrabold text-2xl">Social Media</h3>
@@ -471,9 +644,9 @@
           <!-- second para -->
          <div class=" flex flex-row justify-between gap-20 lg:gap-48">
            <!-- company -->
-           <div class="space-y-7 ">
+           <div class=" space-y-7">
              <h2 class="text-lg font-bold text-white">Company</h2>
-             <div>
+             <div class="gap-y-2">
                <p class="text-white font-medium">About us
                  <br>
                  Leadership
